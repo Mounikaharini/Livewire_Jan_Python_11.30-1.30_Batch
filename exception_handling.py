@@ -34,6 +34,37 @@ try:
 except Exception as a:
     print(a)
 
+#finally
+try:
+    print(10/0)
+except ZeroDivisionError as a:
+    print(a)
+finally:
+    print("hi")
+
+#assert
+a=5
+assert a==50
+print(a)
+
+
+a=5
+assert a==50,'a is equal to 5'
+print(a)
+
+#raise
+
+a=3
+b=0
+if b==0:
+    raise ZeroDivisionError(‘This error is made by me   ’)
+c=a+b
+d=a-b
+e=a/b
+try:
+    print(c,d,e)
+except Exception as e:
+    print(e)
 
 
 
